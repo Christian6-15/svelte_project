@@ -1,0 +1,21 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+	  "allowJs": true,
+	  "checkJs": true,
+	  "esModuleInterop": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "resolveJsonModule": true,
+	  "skipLibCheck": true,
+	  "sourceMap": true,
+	  "strict": true,
+	  "moduleResolution": "node",
+	  "lib": ["ESNext", "DOM", "DOM.Iterable"], // 移除 "node"，修正为大写 "ESNext"
+	  "types": [
+		"node",
+		"svelte",
+		"@sveltejs/kit",
+		"@types/better-sqlite3"
+	  ]
+	}
+  }
