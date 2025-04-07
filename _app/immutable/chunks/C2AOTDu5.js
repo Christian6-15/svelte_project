@@ -1,1 +1,0 @@
-import{v as a}from"./BWjiBZrZ.js";function c(s,e,t){var r=s==null?"":""+s;return r===""?null:r}function h(s,e){return s==null?null:String(s)}function o(s,e,t,r,u,i){var n=s.__className;if(a||n!==t){var l=c(t);(!a||l!==s.getAttribute("class"))&&(l==null?s.removeAttribute("class"):s.className=l),s.__className=t}return i}export{o as s,h as t};
