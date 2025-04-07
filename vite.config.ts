@@ -7,5 +7,6 @@ export default defineConfig({
     fs: {
       allow: ['..'], // 允许访问 static 目录
     },
+    allowedHosts: true // 允许所有主机访问（开发阶段使用）
   },
 });

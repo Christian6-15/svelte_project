@@ -1,21 +1,17 @@
-import adapter from '@sveltejs/adapter-static'; // 替换为 adapter-static
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'; // 修改这一行
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
   preprocess: vitePreprocess(),
-
   kit: {
     adapter: adapter({
-      pages: 'build', // 静态文件输出目录
-      assets: 'build', // 静态资源输出目录
-      fallback: 'index.html', // 单页应用需要 fallback
-      precompress: false // 是否预压缩文件
+      pages: 'build',
+      assets: 'build',
+      fallback: 'index.html',
+      precompress: false
     }),
     paths: {
-      base: '/svelte_project' // 必须与 GitHub Pages 的路径匹配
+      base: '/svelte_project'
     }
   }
 };
-
-export default config;
