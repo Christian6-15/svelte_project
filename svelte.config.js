@@ -13,7 +13,7 @@ const config = {
       precompress: false // 是否预压缩文件
     }),
     paths: {
-      base: '/svelte_project' // 必须与 GitHub Pages 的路径匹配
+      base: '' // 必须与 GitHub Pages 的路径匹配
     }
   }
 };
