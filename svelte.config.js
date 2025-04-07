@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'; // 修改这一行
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
   preprocess: vitePreprocess(),
@@ -11,7 +11,7 @@ export default {
       precompress: false
     }),
     paths: {
-      base: '/svelte_project'
+      base: '/svelte_project' // 匹配 GitHub Pages 路径
     }
   }
 };
