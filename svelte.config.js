@@ -11,7 +11,7 @@ export default {
       precompress: false
     }),
     paths: {
-      base: '/svelte_project'
+      base: ''
     }
   }
 };
